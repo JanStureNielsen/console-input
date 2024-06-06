@@ -44,7 +44,7 @@ public class Application {
     	return "Hello, " + (0==args.length ? "World" : String.join(", ", args)) + "!";
     }
 
-    static <T> Set<T> setOf(T defaultOption, T... otherOptions) {
+    static <T> Set<T> setOf(T defaultOption, T[] otherOptions) {
     	var options = new TreeSet<T>();
 
     	options.add(defaultOption);

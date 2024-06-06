@@ -13,19 +13,6 @@ public class Application {
     		String option = option("Continue? (Y/n)", "c", "continue", "yes", "y", "Y", "n", "N");
 
     		System.out.println("Selected: " + option);
-
-    		/*
-            for(boolean quit = false; !quit; ) {
-	        	System.out.print("Hello>");
-	
-	        	String next = scanner.nextLine();
-	
-	        	switch (next.toLowerCase()) {
-	        		case "q", "quit", "x", "exit" -> quit = true;
-	        		default -> System.out.println(hello(next));
-	        	}
-            }
-            */
     	}
     }
 
@@ -52,7 +39,7 @@ public class Application {
             }
     	}
     }
-    
+
     static String hello(String... args) {
     	return "Hello, " + (0==args.length ? "World" : String.join(", ", args)) + "!";
     }
